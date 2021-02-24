@@ -1,9 +1,11 @@
 class TweeetsController < ApplicationController
   before_action :set_tweeet, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, except: %i[index show]
 
   # GET /tweeets or /tweeets.json
   def index
-    @tweeets = Tweeet.all
+    @tweeets = Tweeet.all.order("created_at DESC")
+    @tweeet = Tweeet.new
   end
 
   # GET /tweeets/1 or /tweeets/1.json
