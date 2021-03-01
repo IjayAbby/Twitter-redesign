@@ -15,6 +15,12 @@
  */
 
  @import "bulma";
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 
  .logo {
    padding-left: 20px;
