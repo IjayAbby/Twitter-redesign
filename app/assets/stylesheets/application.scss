@@ -16,6 +16,10 @@
 
  @import "bulma";
 
+ .logo {
+   padding-left: 20px;
+ }
+
 
 .navbar-brand .title{
     color: white;
@@ -38,5 +42,35 @@
     width: 5rem;
     height: 5rem;
     
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1F2937;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .links{
+    padding: 5px;
+    color: #ffffff;
+  }
+
+  .links:hover {
+    background-color: black;
+  }
+  .main {
+    margin-left: 180px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+
+  .navbar,
+  .notification {
+    margin-left: 180px;
   }
   
