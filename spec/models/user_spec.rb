@@ -43,6 +43,4 @@ RSpec.describe User, type: :model do
       expect(user.auth_token).to be_present
     end
   end
-
-
 end
