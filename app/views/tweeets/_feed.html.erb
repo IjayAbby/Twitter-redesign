@@ -1,4 +1,4 @@
-<div class="column is-half">
+<div class="column is-three-quaters">
   <% if user_signed_in?%>
   <article class="media box">
     <figure class="media-left">
@@ -10,7 +10,15 @@
       <%= render 'tweeets/form' %>
     </div>
   </article>
+  <%else%>
+    <div class ="box">
+      <h1>TWEET SOMETHING</h1>
+      <br>
+        <input class="input" type="text" placeholder="Text input">
+    </div> 
+
   <%end%>
+
 
   <% @tweeets.each do |tweeet| %>
   <div class="box">
@@ -49,4 +57,8 @@
   </div>
   <% end %>
 
+</div>
+
+<div>
+<%= render "who_to_follow" %>
 </div>
