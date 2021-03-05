@@ -13,10 +13,13 @@
  *= require_tree .
  *= require_self
  */
-
+ 
  @import "bulma";
+
+ 
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+
 body {
   font-family: 'Inter', sans-serif;
 }
@@ -52,7 +55,7 @@ body {
 
   .sidenav {
     height: 100%;
-    width: 180px;
+    width: 200px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -79,4 +82,11 @@ body {
   .notification {
     margin-left: 180px;
   }
+
+  .profile-links {
+    color: #ffff;
+  }
   
+  .tweet-field {
+    margin: 0 auto;
+  }
