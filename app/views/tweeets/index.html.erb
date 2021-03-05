@@ -1,16 +1,9 @@
 <section class="section main">
   <div class="container">
     <div class="columns">
-    
     <% if user_signed_in? %>
-      <%= render 'profile' %>
-    <% else %>
-       <%= render 'trends' %>
+    <%= render 'feed' %>
     <% end %>
-    
-     
-      <%= render 'feed' %>
-      <%= render 'who_to_follow' %>
     </div>
   </div>
 </section>
