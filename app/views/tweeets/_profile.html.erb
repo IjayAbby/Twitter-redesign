@@ -1,6 +1,5 @@
-<div class="column is-one-quarter">
+<div class="column">
   <nav class="panel">
-    <p class="panel-heading">Profile</p>
     <div class="panel-block">
       <article class="media">
         <div class="media-left">
@@ -11,7 +10,7 @@
         <div class="media-content">
           <div class="content">
             <p>
-              <strong>
+              <strong class = "profile-links">
                 <%= current_user.name%>
               </strong><br/>
               <small> <%= current_user.username%></small>
@@ -22,24 +21,18 @@
     </div>
     <div class="panel-block">
       <div class="level is-mobile">
-        <div class="level-item has-centered-text">
+
+         <div class="level-item has-centered-text">
           <div>
-            <p class="heading">Tweets</p>
-            <p class="title is-6"><%= current_user.tweeets.count %></p>
+            <p class="heading profile-links">Following</p>
+            <p class="title is-6 profile-links">123</p>
           </div>
         </div>
 
          <div class="level-item has-centered-text">
           <div>
-            <p class="heading">Following</p>
-            <p class="title is-6">123</p>
-          </div>
-        </div>
-
-         <div class="level-item has-centered-text">
-          <div>
-            <p class="heading">Followers</p>
-            <p class="title is-6">456K</p>
+            <p class="heading profile-links">Followers</p>
+            <p class="title is-6 profile-links">456K</p>
           </div>
         </div>
       </div>
