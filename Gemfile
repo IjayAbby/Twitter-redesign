@@ -34,6 +34,7 @@ gem 'gravatar_image_tag', '~> 1.2'
 gem 'rexml'
 gem 'rubocop', '~>0.81.0'
 gem 'simple_form', '~> 5.1'
+gem 'font-awesome-sass-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -68,3 +69,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
