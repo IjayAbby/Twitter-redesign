@@ -1,5 +1,6 @@
-<div class="column is-three-quaters">
 <%= render 'aside-section'%>
+<div class="column is-three-quaters">
+
   <% if user_signed_in?%>
   <article class="media box">
     <figure class="media-left">
@@ -10,14 +11,7 @@
     <div class="media-content">
       <%= render 'tweeets/form' %>
     </div>
-  </article>
-  <%else%>
-    <div class ="box">
-      <h1>TWEET SOMETHING</h1>
-      <br>
-        <input class="input" type="text" placeholder="Text input">
-    </div> 
-
+  </article> 
   <%end%>
 
 
