@@ -1,5 +1,6 @@
 <nav class="navbar is-info">
   <div class="container">
+    
   
     <div class="navbar-brand">
       <%= link_to root_path, class: 'navbar-item' do %>
@@ -20,6 +21,7 @@
     <div id="navbarExample" class="navbar-menu">
       <div class="navbar-end">
         <div class="field is-grouped">
+          
           <% if user_signed_in? %>
           <p class="control level">
             <%= link_to "New Tweet", root_path ,class: 'button is-info is-inverted' %>
