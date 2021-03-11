@@ -1,0 +1,101 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+ @import "bulma";
+
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.white{
+  color: #929EAC;
+}
+ .logo {
+   padding-left: 20px;
+ }
+
+
+.navbar-brand .title{
+    color: white;
+  }
+  
+  .image{
+    border-radius: 50%;
+    img {
+      border-radius:50%
+    }
+  }
+  
+  .notification:not(:last-child){
+    margin-bottom: 0px ;
+    border-radius: 0;
+  }
+  
+  .feature__icon{
+    fill: white;
+    width: 5rem;
+    height: 5rem;
+    
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #213246;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .links{
+    padding: 5px;
+    display: flex;
+  }
+
+  .links:hover {
+    background-color: #4E9AD6;
+  }
+
+  .main {
+    margin-left: 180px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+
+  .navbar,
+  .notification {
+    margin-left: 180px;
+  }
+
+  .sidebar-links {
+    color: #ffff;
+    padding-right: 20px;
+
+  }
+
+  .sidebar-icons{
+  display: flex
+  }
+  
+  .tweet-field {
+    margin: 0 auto;
+  }
