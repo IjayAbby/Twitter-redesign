@@ -54,6 +54,7 @@ group :development do
   gem 'guard', '~> 2.16', '>= 2.16.2'
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
   gem 'spring'
+  gem 'hirb'  #Used to create table data
 end
 
 group :test do
@@ -69,4 +70,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
+gem 'bootstrap', '~> 4.5'
+gem 'paperclip'
 

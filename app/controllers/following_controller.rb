@@ -1,11 +1,13 @@
 class FollowingsController < ApplicationController
-  def create
-    @following = current_user.followings.new(followed_id: params[:user_id])
-    if @following.save
-      flash[:notice] = "You are following #{User.find(params[:user_id]).fullname}"
-    else
-      flash[:alert] = 'Something went wrong ...'
-    end
-    redirect_to root_path
-  end
+	before_action :require_user
+	
+	def create
+	    @following = current_user.followings.new(followed_id: params[:user_id])
+	    flash[:notice] =if @following.save
+	                       "You are now following #{User.find(params[:user_id]).fullname}"
+	                    else
+	                       'Something went wrong.'
+	                    end
+	    redirect_back(fallback_location: root_path)
+	 end
 end

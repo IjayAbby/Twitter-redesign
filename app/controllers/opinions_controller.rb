@@ -1,12 +1,6 @@
 class OpinionsController < ApplicationController
 	before_action :require_user
 
-	def index
-		@opinion = Opinion.new
-		@opinion = Opinion.order_by_most_recent
-		@not_follow = current_user.who_to_follow
-	end
-
 	def create
 		@opinion = current_user.opinios.build(opinion_params)
 		if @opinion.save
