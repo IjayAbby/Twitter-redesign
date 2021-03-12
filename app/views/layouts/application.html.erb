@@ -6,9 +6,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => false  %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'  %>
     <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn/font-awesome/4.7.0/css/font-awesome.min.css" %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
@@ -23,6 +23,8 @@
     <p class="alert"> <%= alert %> </p>
   </div>
   <% end %>
+
+  <%= render "layouts/navbar" %>
 
     <%= yield %>
   </body>
