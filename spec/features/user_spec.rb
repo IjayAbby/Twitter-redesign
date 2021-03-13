@@ -11,8 +11,8 @@ describe 'Authentication', type: :feature do
     click_button 'Login'
     expect(current_path).to eq(root_path)
   end
-
 end
+
 
 describe 'Authenticated User Activities', type: :feature do
   before :each do
