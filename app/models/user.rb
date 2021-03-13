@@ -6,6 +6,9 @@ class User < ApplicationRecord
   has_many :followers, through: :inverse_followings
   has_many :likes, dependent: :destroy
 
+  has_one_attached :photo
+  has_one_attached :cover_image
+
  
 
   validates_uniqueness_of :username, case_sensitive: false, message: 'Username already taken.'
