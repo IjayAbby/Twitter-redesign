@@ -6,7 +6,7 @@
 
 <div class="card mb-5">
     <div class="card-body">
-    <h5 class="card-title border-bottom pb-3">JOB HINT TO <%= @user.fullname.upcase %></h5>
+    <h5 class="card-title border-bottom pb-3">Start a Conversation With <%= @user.fullname %></h5>
         <%= form_for(@opinion, url: opinion_path) do |f| %>
             <%= f.text_field :text, autofocus: true, class: "form-control", placeholder: "Enter a message..." %>
         <% end %>
@@ -15,7 +15,7 @@
 
 <div class="card">
     <div class="card-body">
-        <h5 class="card-title border-bottom pb-3">ALL JOB HINTS FROM <%= @user.fullname.upcase %></h5>
+        <h5 class="card-title border-bottom pb-3">All Conversations From <%= @user.fullname %></h5>
         <%= render @opinions %>
     </div>
 </div>
