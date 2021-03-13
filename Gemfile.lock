@@ -72,9 +72,6 @@ GEM
       popper_js (>= 1.14.3, < 2)
       sassc-rails (>= 2.0.0)
     builder (3.2.4)
-    bullet (6.1.4)
-      activesupport (>= 3.0.0)
-      uniform_notifier (~> 1.11)
     byebug (11.1.3)
     capybara (3.35.3)
       addressable
@@ -223,7 +220,6 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
-    uniform_notifier (1.14.1)
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -251,7 +247,6 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   bootstrap (~> 4.5)
-  bullet
   byebug
   capybara (~> 3.35, >= 3.35.3)
   factory_bot_rails (~> 5)
