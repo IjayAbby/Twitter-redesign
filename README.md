@@ -2,7 +2,13 @@
 
 > I have built a Twitter Redesign for my Ruby on Rails capstone project which is a desktop web app. My project is a social media application called **Converse**
 
-![screenshot](./app_screenshot.png)
+## Homepage
+
+![Homepage](https://user-images.githubusercontent.com/43843720/111085136-135cce00-8527-11eb-8c70-a943e1112f84.png)
+
+## Profile Page
+
+![Profile](https://user-images.githubusercontent.com/43843720/111085230-7ea6a000-8527-11eb-8a2f-2761c37633a7.png)
 
 I had an option to personalise the website and style it my own way. The end goal however was to create anything that someone could share opinions about with people who follow them and vice versa. The design I have emulated is by Design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
 As per the project specifications, I have followed a user journey to build the following **MVP version** of the app:
@@ -50,7 +56,7 @@ While developing the project, I ensured I set-up code linters,used the right git
 
 ## Video Presentation
 
-[Loom](https://livedemo.com)
+[Loom](https://www.loom.com/share/1cbc4c4531774cbf86f47502df2cfccd)
 
 
 ## Getting Started
