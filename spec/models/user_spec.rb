@@ -1,50 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-<<<<<<< HEAD
-  subject(:user) { build(:user) }
-
-  describe 'association' do
-    it { is_expected.to have_many(:tweeets).with_foreign_key(:user_id).dependent(:destroy) }
-  end
-
-  describe 'validations' do
-    it { is_expected.to have_secure_password }
-
-    it { is_expected.to validate_presence_of(:username) }
-
-    it { is_expected.to validate_length_of(:username).is_at_most(255) }
-
-    it { is_expected.to validate_presence_of(:name) }
-
-    it { is_expected.to validate_length_of(:name).is_at_most(20) }
-
-    it { is_expected.to validate_length_of(:password).is_at_least(6) }
-
-    it 'lowercase username before saving' do
-      username = 'helloexamplecom'
-      user.username = username.upcase
-      user.save!
-
-      expect(user.username).to eq(username)
-    end
-
-    it 'strips the username before validation' do
-      username = '   helloexamplecom '
-      user.username = username
-      user.save!
-
-      expect(user.username).to eq('helloexamplecom')
-    end
-
-    it 'generates user auth_token at random' do
-      user.auth_token = nil
-      user.save!
-
-      expect(user.auth_token).to be_present
-    end
-  end
-=======
   describe 'Validations' do
     it do
       should validate_presence_of(:username)
@@ -83,5 +39,4 @@ RSpec.describe User, type: :model do
     it { should have_many(:follows).through(:followings) }
     it { should have_many(:followers).through(:inverse_followings) }
   end
->>>>>>> origin/twitter
 end
