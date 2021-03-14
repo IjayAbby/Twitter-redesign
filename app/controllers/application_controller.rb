@@ -1,12 +1,18 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
+  helper_method :current_user, :logged_in?
 
-  before_action :configure_permitted_parameters, if: :devise_controller?
+  def current_user
+    @current_user ||= User.find_by(username: session[:username]) if session[:username]
+  end
 
-  protected
+  def logged_in?
+    !current_user.nil?
+  end
 
-  def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:name, :email, :password, :password_confirmation) }
-    devise_parameter_sanitizer.permit(:account_update) { |u| u.permit(:name, :email, :password, :current_password) }
+  def require_user
+    return if logged_in?
+
+    flash[:alert] = 'You need to be logged in to perform that action'
+    redirect_to login_path
   end
 end
