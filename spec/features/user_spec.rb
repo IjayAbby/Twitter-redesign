@@ -7,12 +7,11 @@ describe 'Authentication', type: :feature do
 
   it 'signs @user in to access index page' do
     visit login_path
-    fill_in 'session_username', with: 'chantelle'    
+    fill_in 'session_username', with: 'chantelle'
     click_button 'Login'
     expect(current_path).to eq(root_path)
   end
 end
-
 
 describe 'Authenticated User Activities', type: :feature do
   before :each do
