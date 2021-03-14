@@ -1,5 +1,5 @@
 module UsersHelper
-	def display_follow_btn(user, the_partial)
+  def display_follow_btn(user, the_partial)
     return if current_user == user || current_user.follows.include?(user)
 
     render partial: the_partial, locals: { obj: user }

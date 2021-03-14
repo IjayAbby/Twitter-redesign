@@ -1,5 +1,5 @@
 module ApplicationHelper
-	def active_class(url_action)
+  def active_class(url_action)
     'actived' if params[:action] == url_action
   end
 
