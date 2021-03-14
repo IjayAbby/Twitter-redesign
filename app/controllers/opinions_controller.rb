@@ -1,5 +1,5 @@
 class OpinionsController < ApplicationController
-	before_action :require_user
+  before_action :require_user
 
   def create
     @opinion = current_user.opinions.build(opinion_params)
