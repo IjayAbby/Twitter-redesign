@@ -9,8 +9,6 @@ class User < ApplicationRecord
   has_one_attached :photo
   has_one_attached :cover_image
 
- 
-
   validates_uniqueness_of :username, case_sensitive: false, message: 'Username already taken.'
   validates_presence_of :username, message: 'Username cannot be blank'
   validates_presence_of :fullname, message: 'FullName cannot be blank'
