@@ -98,7 +98,7 @@ Run <code>$ bundle install</code> to set up gems.
 
 ### Usage
 
-Start your server with <code>$ rails s</code> and navigate to the **Converse Desktop Web App** via this [link](http://localhost:3000/)
+Start your server with <code>$ rails s</code> and navigate to the **Converse Desktop Web App** 
 
 ### Run tests
 
