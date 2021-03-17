@@ -52,7 +52,7 @@ While developing the project, I ensured I set-up code linters,used the right git
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://twitter-redesign-ror.herokuapp.com/)
 
 ## Video Presentation
 
