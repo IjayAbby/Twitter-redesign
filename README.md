@@ -56,7 +56,7 @@ While developing the project, I ensured I set-up code linters,used the right git
 
 ## Video Presentation
 
-[Loom](https://www.loom.com/share/1cbc4c4531774cbf86f47502df2cfccd)
+[YouTube Link](https://youtu.be/OVOjoGtinLQ)
 
 
 ## Getting Started
@@ -129,6 +129,7 @@ Give a ⭐️ if you like this project!
 - Microverse
 - [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
 - Rails Guides
+- Unsplash.
 
 ## 📝 License
 
